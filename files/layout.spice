@@ -1,0 +1,19 @@
+* SPICE3 file created from layout.ext - technology: sky130A
+
+X0 a_540_n410# a_n40_n1810# output gnd sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+X1 a_n40_n1810# s1 gnd gnd sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+X2 a_540_n1810# s1 output gnd sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+X3 a_n40_n410# s0 gnd gnd sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+X4 I0 a_n40_n410# a_540_n410# gnd sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+X5 a_n40_n410# s0 vdd vdd sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.9 as=0.9 ps=4.9 w=2 l=0.15
+X6 I1 s0 a_540_n410# gnd sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+X7 output s1 a_540_n410# vdd sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.9 as=0.9 ps=4.9 w=2 l=0.15
+X8 a_540_n1810# s0 I2 vdd sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.9 as=0.9 ps=4.9 w=2 l=0.15
+X9 a_540_n1810# a_n40_n410# I3 vdd sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.9 as=0.9 ps=4.9 w=2 l=0.15
+X10 I2 a_n40_n410# a_540_n1810# gnd sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+X11 a_540_n410# s0 I0 vdd sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.9 as=0.9 ps=4.9 w=2 l=0.15
+X12 a_540_n410# a_n40_n410# I1 vdd sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.9 as=0.9 ps=4.9 w=2 l=0.15
+X13 I3 s0 a_540_n1810# gnd sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+X14 a_n40_n1810# s1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.9 as=0.9 ps=4.9 w=2 l=0.15
+X15 output a_n40_n1810# a_540_n1810# vdd sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.9 as=0.9 ps=4.9 w=2 l=0.15
+
