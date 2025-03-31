@@ -12,10 +12,10 @@ This project focuses on the **design, simulation, synthesis, and physical implem
 ## **Table of Contents**  
 1. [Tools and PDK Setup](#1-tools-and-pdk-setup)  
 2. [Multiplexer Design Flow](#2-multiplexer-design-flow)  
-  - [2.1 RTL Design & Simulation](#21-rtl-design--simulation)  
-  - [2.2 Synthesis & Netlist Generation](#22-synthesis--netlist-generation)  
-  - [2.3 Schematic Design & SPICE Simulation](#23-schematic-design--spice-simulation)  
-  - [2.4 Layout Design & Verification](#24-layout-design--verification)  
+   - [2.1 RTL Design & Simulation](#21-rtl-design--simulation)  
+   - [2.2 Synthesis & Netlist Generation](#22-synthesis--netlist-generation)  
+   - [2.3 Schematic Design & SPICE Simulation](#23-schematic-design--spice-simulation)  
+   - [2.4 Layout Design & Verification](#24-layout-design--verification)  
 3. [Results & Discussion](#3-results--discussion)  
 4. [Conclusion](#4-conclusion)  
 
@@ -146,34 +146,34 @@ sudo make install
 
 ### **2.1 RTL Design & Simulation**  
 - Developed **Verilog code** for the 4×1 MUX using **VS Code**. 
-Verilog module for 4X1 mux:<img src="https://github.com/Shubham210204/Full-Adder-Design-Optimization-CMOS-Implementation-Open-Source-VLSI-Flow-/blob/main/images/module.png?raw=true">
+Verilog module for 4X1 mux:<img src="https://github.com/Shubham210204/4X1-Multiplexer-Design-Optimization-Transmission-Gate-Implementation-Open-Source-VLSI-Flow-/blob/main/images/module.png?raw=true">
 <br>
 
-Test bench for the above module:<img src="https://github.com/Shubham210204/Full-Adder-Design-Optimization-CMOS-Implementation-Open-Source-VLSI-Flow-/blob/main/images/tb.png?raw=true">
+Test bench for the above module:<img src="https://github.com/Shubham210204/4X1-Multiplexer-Design-Optimization-Transmission-Gate-Implementation-Open-Source-VLSI-Flow-/blob/main/images/tb.png?raw=true">
 <br><br>
 
 - Simulated the functionality using **Icarus Verilog (Iverilog)** and analyzed the output waveforms in **GTKWave**.  
-Verilog simulation:<img src="https://github.com/Shubham210204/Full-Adder-Design-Optimization-CMOS-Implementation-Open-Source-VLSI-Flow-/blob/main/images/rtl_simulation.png?raw=true">
+Verilog simulation:<img src="https://github.com/Shubham210204/4X1-Multiplexer-Design-Optimization-Transmission-Gate-Implementation-Open-Source-VLSI-Flow-/blob/main/images/simulation.png?raw=true">
 <br><br>
 
 - Verified correct **selection and output behavior** for all input combinations.  
 
 ### **2.2 Synthesis & Netlist Generation**  
 - Synthesized the RTL design using **Yosys** to generate a **gate-level netlist**. 
-Synthesised block diagram:<img src="https://github.com/Shubham210204/Full-Adder-Design-Optimization-CMOS-Implementation-Open-Source-VLSI-Flow-/blob/main/images/synthesis.png?raw=true">
+Synthesised block diagram:<img src="https://github.com/Shubham210204/4X1-Multiplexer-Design-Optimization-Transmission-Gate-Implementation-Open-Source-VLSI-Flow-/blob/main/images/synthesis.png?raw=true">
 <br><br>
 
 
 ### **2.3 Schematic Design & SPICE Simulation**  
 - Created an **optimized schematic using transmission gates** in **Xschem**.  
-Schematic of 4X1 mux:<img src="https://github.com/Shubham210204/Full-Adder-Design-Optimization-CMOS-Implementation-Open-Source-VLSI-Flow-/blob/main/images/full_adder.png?raw=true">
+Schematic of 4X1 mux:<img src="https://github.com/Shubham210204/4X1-Multiplexer-Design-Optimization-Transmission-Gate-Implementation-Open-Source-VLSI-Flow-/blob/main/images/schematic.png?raw=true">
 <br><br>
 
-- Verified circuit behavior through **SPICE simulations** using **NGSpice**.
-According to these inputs:<img src="https://github.com/Shubham210204/Full-Adder-Design-Optimization-CMOS-Implementation-Open-Source-VLSI-Flow-/blob/main/images/input.png?raw=true">
+- Verified circuit behavior through **SPICE simulations** using **NGSpice**. <br>
+According to these inputs:<img src="https://github.com/Shubham210204/4X1-Multiplexer-Design-Optimization-Transmission-Gate-Implementation-Open-Source-VLSI-Flow-/blob/main/images/input.png?raw=true">
 <br>
 
-These are the output waveforms:<img src="https://github.com/Shubham210204/Full-Adder-Design-Optimization-CMOS-Implementation-Open-Source-VLSI-Flow-/blob/main/images/output.png?raw=true">
+These are the output waveforms:<img src="https://github.com/Shubham210204/4X1-Multiplexer-Design-Optimization-Transmission-Gate-Implementation-Open-Source-VLSI-Flow-/blob/main/images/output.png?raw=true">
 <br><br>
 
 
@@ -181,7 +181,7 @@ These are the output waveforms:<img src="https://github.com/Shubham210204/Full-A
 - Designed the **Transmission Gate layout** using **Magic VLSI**, ensuring:  
   - **Minimal area consumption**  
   - **Proper transistor placement and routing**  
-Final physical layout of 4X1 mux:<img src="https://github.com/Shubham210204/Full-Adder-Design-Optimization-CMOS-Implementation-Open-Source-VLSI-Flow-/blob/main/images/layout.png?raw=true">
+Final physical layout of 4X1 mux:<img src="https://github.com/Shubham210204/4X1-Multiplexer-Design-Optimization-Transmission-Gate-Implementation-Open-Source-VLSI-Flow-/blob/main/images/layout.png?raw=true">
 <br><br>
 
 - Performed **Design Rule Check (DRC)** in **Magic** to verify layout correctness.  
